@@ -8,4 +8,11 @@ Further reading:
 
 ## Plain node.js
 
-A simpe script `app.js` can be run on the command line (no dependencies, no building or bundling).
+A simple script `app.js` can be run on the command line (no dependencies, no building or bundling).
+
+## Bundling with webpack
+
+Run `npm install webpack`. As usual, `npm` will create or update following files:
+- `package.json` (refering to `webpack` only)
+- `package-lock.json` (refering to `webpack` and its fifty-or-so dependencies)
+- `node_modules` (containing the downloaded packages)
