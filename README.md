@@ -1,25 +1,54 @@
-# Developing Javascript - getting started with Node.js and NPM
+# Developing Angular - getting started with Node.js and NPM
 
 - uses `vscode` with the `remote - containers` plugin
-- remote containers is configured to use the `node` docker image
+- a Dockerfile specifies to use the `node` docker image and pre-install `ng`
 
 Further reading:
+- Angular setup: https://angular.io/guide/setup-local
+  - in addition, the project installs 'its' version of angular locally
 - node.js standard library: https://nodejs.org/api/
 
-## Plain node.js
+## Getting started with Angular
 
-A simple script `app.js` can be run on the command line (no dependencies, no building or bundling).
+Angular-CLI wants to create the workspace itself by `ng new <name>`.
 
-## Bundling with webpack
-
-Run `npm install --save-dev webpack webpack-cli`
-
-As usual, `npm` will create or update following files:
-- `package.json` (refering to `webpack` only)
-- `package-lock.json` (refering to `webpack` and its seventy-or-so dependencies)
+There will be the usual `npm` files and directories:
+- `package.json`
+- `package-lock.json`
 - `node_modules` (containing the downloaded packages)
 
-Manually create or update `webpack.config.js`.
+Angular adds some more configuration:
+- `.browserlistrc` for browser compatibility
+- `angular.json` for Angular app configuration
+- `karma.conf.js` as test runner
+- `tsconfig.json`, `tsconfig.app.json` and `tsconfig.spec.json`
 
-Finally, in `package.json`, section `scripts`, add a `build` directive to run `webpack`.
-With that, `npm run build` will execute `webpack`.
+The following information is also written by Angular to the README.md:
+
+## Angular README
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+
+### Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+### Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+### Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+### Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+### Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+### Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
