@@ -12,9 +12,11 @@ A simple script `app.js` can be run on the command line (no dependencies, no bui
 
 ## Bundling with webpack
 
-Run `npm install webpack`. As usual, `npm` will create or update following files:
+Run `npm install --save-dev webpack`.
+
+As usual, `npm` will create or update following files:
 - `package.json` (refering to `webpack` only)
-- `package-lock.json` (refering to `webpack` and its fifty-or-so dependencies)
+- `package-lock.json` (refering to `webpack` and its seventy-or-so dependencies)
 - `node_modules` (containing the downloaded packages)
 
 Manually create or update `webpack.config.js`
