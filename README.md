@@ -16,3 +16,5 @@ Run `npm install webpack`. As usual, `npm` will create or update following files
 - `package.json` (refering to `webpack` only)
 - `package-lock.json` (refering to `webpack` and its fifty-or-so dependencies)
 - `node_modules` (containing the downloaded packages)
+
+Manually create or update `webpack.config.js`
