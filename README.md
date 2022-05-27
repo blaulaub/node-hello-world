@@ -1,11 +1,12 @@
 # Developing Angular - getting started with Node.js and NPM
 
-- uses `vscode` with the `remote - containers` plugin
-- a Dockerfile specifies to use the `node` docker image and pre-install `ng`
+Requires Node.js, npm, ng-cli.
+- either have these installed locally
+- or use `vscode` with the `remote - containers` plugin, see [.devcontainer/README.md](.devcontainer/README.md)
 
 Further reading:
 - Angular setup: https://angular.io/guide/setup-local
-  - in addition, the project installs 'its' version of angular locally
+  - in addition, the project installs 'its' version of angular locally during `npm install`
 - node.js standard library: https://nodejs.org/api/
 
 ## Getting started with Angular
